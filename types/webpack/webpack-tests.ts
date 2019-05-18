@@ -463,6 +463,9 @@ plugin = new webpack.SingleEntryPlugin(
 webpack({
     // configuration
 }, (err, stats) => {
+    if (err !== null) {
+        console.log(err);
+    }
     // ...
 });
 

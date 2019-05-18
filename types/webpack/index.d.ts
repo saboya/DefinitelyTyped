@@ -1028,7 +1028,7 @@ declare namespace webpack {
     }
 
     namespace ICompiler {
-        type Handler = (err: Error, stats: Stats) => void;
+        type Handler = (err: Error | null, stats: Stats) => void;
 
         interface WatchOptions {
             /**
